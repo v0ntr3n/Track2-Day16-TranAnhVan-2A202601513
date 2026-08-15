@@ -1,0 +1,36 @@
+{
+    "dataset": {
+        "path": "/root/ml-benchmark/creditcard.csv",
+        "total_rows": 284807,
+        "features": 30,
+        "train_rows": 227845,
+        "test_rows": 56962,
+        "fraud_rows": 492,
+        "normal_rows": 284315
+    },
+    "timing": {
+        "load_data_seconds": 1.853394,
+        "training_seconds": 15.546247
+    },
+    "metrics": {
+        "auc_roc": 0.942848,
+        "accuracy": 0.999491,
+        "f1_score": 0.849741,
+        "precision": 0.863158,
+        "recall": 0.836735
+    },
+    "inference": {
+        "single_row_latency_ms": 2.863651,
+        "single_row_runs": 100,
+        "batch_size": 1000,
+        "batch_average_seconds": 0.015739,
+        "throughput_rows_per_second": 63537.87
+    },
+    "model": {
+        "type": "LGBMClassifier",
+        "n_estimators": 300,
+        "learning_rate": 0.05,
+        "num_leaves": 31,
+        "best_iteration": 0
+    }
+}
